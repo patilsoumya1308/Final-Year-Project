@@ -1,0 +1,77 @@
+/* General gradient background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #5c6bc0, #ab47bc);
+    height: 100vh;
+}
+
+/* Top logo bar */
+.login-header {
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.login-header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #222;
+}
+
+/* Centered login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.login-box label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    font-size: 0.9em;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Gradient button */
+.login-box button {
+    width: 100%;
+    background: linear-gradient(to right, #ec4899, #d946ef);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+    background: linear-gradient(to right, #d946ef, #ec4899);
+}

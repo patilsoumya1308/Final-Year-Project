@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Branch Predictor</title>
+    <link rel="stylesheet" href="/static/predict.css">
+</head>
+<body>
+    <!-- Form Container -->
+    <div class="login-container">
+        <header>
+            <h2 class="logo">🎓 Branch Predictor</h2>
+        </header>
+        <form class="form-box" method="POST">
+
+            <h2>Your Details</h2>
+            
+            <label>Category</label>
+            <select name="category" required>
+                <option disabled selected>Choose Category</option>
+                <option value="GEN">GEN</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+            </select>
+
+        <label>Quota</label>
+        <select name="exam_type" required onchange="toggleScore(this)">
+            <option disabled selected>Choose Quota</option>
+            <option value="jee">JEE</option>
+            <option value="cet">MHT-CET</option>
+        </select>
+
+        <label id="score-label">>Score</label>
+        <input id="score-input" type="number" name="exam_score" step="0.01" placeholder="Enter Your Score" required>
+
+        <label>10th Score</label>
+        <input type="number" name="tenth" step="0.01" placeholder="Enter Your 10th Score" required>
+
+        <label>12th Score</label>
+        <input type="number" name="twelfth" step="0.01" placeholder="Enter Your 12th Score" required>
+
+        <button type="submit" class="submit-button">Predict Your Future Branch →</button>
+    </form>
+    <footer>
+        <p>© 2025 Branch Predictor. All rights reserved.</p>
+    </footer>
+</div>
+
+    <script>
+        function toggleScore(select) {
+            const label = document.getElementById('score-label');
+            const input = document.getElementById('score-input');
+
+            if (select.value === 'jee' || select.value === 'cet') {
+                label.style.display = 'block';
+                input.style.display = 'block';
+                input.setAttribute('required', 'required');
+            } else {
+                label.style.display = 'none';
+                input.style.display = 'none';
+                input.removeAttribute('required');
+                input.value = '';
+            }
+        }
+    </script>
+    
+</body>
+</html>

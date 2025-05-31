@@ -1,0 +1,76 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.result-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-header {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.predicted-branch {
+    background-color: #d1fadf;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.result-details {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.result-details p {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.note-box {
+    background-color: #e0f7fa;
+    border-left: 5px solid #00acc1;
+    padding: 12px;
+    font-size: 14px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.predict-button {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to right, #ec4899, #d946ef);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.predict-button:hover {
+    background: linear-gradient(to right, #d946ef, #ec4899);
+    transform: translateY(-2px);
+}
